@@ -1,4 +1,4 @@
-package basic.abstraction
+package scala.basic.abstraction
 
 /**
   * Created by Led on 26/03/2017.
@@ -39,21 +39,3 @@ class MazingerZ extends SuperHero {
   }
 }
 
-object RobotTesterDriver {
-  def main(args: Array[String]) {
-    println("**** Generic Hero ****")
-     var hero = new SuperHero
-     hero.chargeSuperWeapon()
-     hero.useSuperWeapon()
-
-    println("**** VoltesV ****")
-    hero = new VoltesV
-    hero.chargeSuperWeapon("Ultra magnetic top")
-    hero.useSuperWeapon("Ultra magnetic top")
-
-    println("*** MazingerZ ***")
-    val mz = new MazingerZ
-    mz.chargeSuperWeapon("Rocket Punch")
-    mz.useSuperWeapon("Rocket Punch")
-  }
-}
